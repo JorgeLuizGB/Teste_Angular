@@ -1,0 +1,12 @@
+<!--primeira forma-->
+<input type="text" 
+[value]="placeHolder"
+(input)="placeHolder = $any($event.target).value"
+>
+<p>{{placeHolder}}</p>
+
+<!--segunda forma-->
+<input type="text" 
+[(ngModel)] = "placePass"
+>
+<p>{{placePass}}</p>
